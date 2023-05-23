@@ -27,7 +27,27 @@ console.log(person.name);
 var hobbies;
 var hobb; //loss all ts denifits.
 hobbies = ['safds', 'sadfs'];
+//ts infered.
 for (var _i = 0, hobbies_1 = hobbies; _i < hobbies_1.length; _i++) {
     var hobby = hobbies_1[_i];
     console.log(hobby);
 }
+// arr =[2,'str' ]   type  string|number  this is a tuple,  [string,number] first should be a number second should be a string
+//tuple fixed length and type array.
+//enum is a list like move left right up down; like drop down choose one value at a time.
+// we can assign limit number of value to a var.
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READONLY"] = 1] = "READONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+; // 1 means ADMIN , 2 READONLY, 3 Author
+var author;
+(function (author) {
+    author[author["suspense"] = 0] = "suspense";
+    author[author["scifi"] = 1] = "scifi";
+    author[author["drama"] = 2] = "drama";
+})(author || (author = {}));
+; //enum is special type means no colon
+console.log(Role.ADMIN);
