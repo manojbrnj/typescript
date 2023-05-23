@@ -48,6 +48,16 @@ for (const hobby of hobbies) {
 
 
 
+//enum is a list like move left right up down; like drop down choose one value at a time.
+// we can assign limit number of value to a var.
+
+enum Role { ADMIN, READONLY, AUTHOR }; // 1 means ADMIN , 2 READONLY, 3 Author
+enum author { 'suspense' = 0, 'scifi' = 1, 'drama' = 2 }; //enum is special type means no colon
+
+
+console.log(Role.ADMIN);
+
+
 
 
 
