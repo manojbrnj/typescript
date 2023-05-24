@@ -62,7 +62,7 @@
     "removeComments": true,
     "noImplicitReturns": true,
     "sourceMap": true,
-    "isolatedModules": true,
+
     "allowUmdGlobalAccess": true,
     "lib": ["DOM", "DOM.Iterable", "ES6"]
   },

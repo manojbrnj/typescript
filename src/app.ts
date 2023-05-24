@@ -72,8 +72,8 @@
 
 const button: HTMLButtonElement = document.querySelector("button")! as HTMLButtonElement;
 
-button.addEventListener(('click'), () => {
-  console.log('click');
+button.addEventListener(('click'), (event) => {
+  console.log(event);
 })
 
 // documnet exist or not how tsc will know we have document available. \
@@ -83,4 +83,4 @@ button.addEventListener(('click'), () => {
 
 // ts know lib es6 dom api are available global.
 //all dom api also available global  for js and ts.
-module.exports = {}
+
